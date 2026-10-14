@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #eef2f7;
+    color: #1e2a3a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 6px;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 480px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.cartao {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cartao h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.campo {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 2px solid #cdd5df;
+    border-radius: 8px;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2f6fb3;
+}
+
+input.erro {
+    border-color: #d64545;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #2f6fb3;
+    color: white;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #245a92;
+}
+
+button.secundario {
+    background: #e1e7ef;
+    color: #1e2a3a;
+}
+
+button.secundario:hover {
+    background: #cdd5df;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.resultado strong {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 4px;
+}
+
+.oculto {
+    display: none;
+}
+
+.abaixo   { background: #e3f0fb; color: #1d5a8c; }
+.normal   { background: #e2f5e9; color: #1d7a43; }
+.sobrepeso{ background: #fff4dc; color: #8a6200; }
+.obesidade{ background: #fde6e6; color: #a12d2d; }
+.mensagem-erro { background: #fde6e6; color: #a12d2d; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #e1e7ef;
+}
+
+tr.destaque {
+    background: #fff4dc;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 16px;
+    font-size: 0.9rem;
+    color: #6b7a8c;
+}
